@@ -4,17 +4,32 @@
   "description": "My personal boilerplate for new web projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -f dist/*",
+    "postcss": "postcss --use postcss-import -o dist/styles.css src/css/*.css",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html'",
+    "build:css": "npm run postcss",
+    "build:all": "npm run build:css",
+    "watch:css": "onchange 'src/css/*.css' -- npm run build:css",
+    "watch:all": "npm-run-all -p serve watch:css",
+    "postinstall": "npm run build:all && npm run watch:all"
   },
   "repository": {
     "type": "git",
     "url": "github.com/jonmilner/jon-boilerplate"
   },
-  "author": "Jon Milner",
+  "author": "Jon Milner <email@jonmilner.com>",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "npm-run-all": "^1.8.0",
+    "onchange": "^2.4.0",
+    "postcss": "^5.0.20",
+    "postcss-import": "^8.1.0",
     "stylelint": "^6.2.2",
     "stylelint-config": "git+ssh://git@github.com/jonmilner/stylelint-config.git",
     "stylelint-config-standard": "^6.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^4.1.1"
   }
 }
