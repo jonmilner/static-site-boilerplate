@@ -1,0 +1,20 @@
+{
+  "name": "web-boilerplate",
+  "version": "1.0.0",
+  "description": "My personal boilerplate for new web projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/jonmilner/jon-boilerplate"
+  },
+  "author": "Jon Milner",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^6.2.2",
+    "stylelint-config": "git+ssh://git@github.com/jonmilner/stylelint-config.git",
+    "stylelint-config-standard": "^6.0.0"
+  }
+}
