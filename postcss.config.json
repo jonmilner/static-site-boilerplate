@@ -1,0 +1,13 @@
+{
+  "use": [
+    "postcss-import",
+    "precss",
+    "postcss-cssnext",
+    "postcss-hexrgba",
+    "postcss-reporter"
+  ],
+  "input": "src/css/styles.css",
+  "output": "dist/styles.css",
+  "map": true,
+  "local-plugins": true
+}
