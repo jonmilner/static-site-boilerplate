@@ -1,7 +1,6 @@
 {
   "name": "web-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
   "description": "A boilerplate for new static web projects.",
   "scripts": {
     "clean": "rm -f dist/*",
