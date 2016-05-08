@@ -1,6 +1,7 @@
 {
   "use": [
     "postcss-import",
+    "postcss-apply",
     "precss",
     "postcss-cssnext",
     "postcss-hexrgba",
