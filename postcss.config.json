@@ -1,6 +1,5 @@
 {
   "use": [
-    "stylelint",
     "postcss-import",
     "cq-prolyfill/postcss-plugin",
     "postcss-apply",

@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rm -f dist/*",
     "serve": "browser-sync start --server --serveStatic dist --files dist/**/*",
-    "build:css": "postcss -c postcss.config.json",
+    "lint:css": "stylelint 'src/css/**/*.css' || true",
+    "build:css": "npm run lint:css && postcss -c postcss.config.json",
     "build:js": "webpack",
     "build:html": "pug src/views/*.pug -o dist --pretty",
     "build:all": "parallelshell 'npm run build:css' 'npm run build:js' 'npm run build:html'",
