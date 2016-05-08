@@ -5,7 +5,7 @@
   "description": "A boilerplate for new static web projects.",
   "scripts": {
     "clean": "rm -f dist/*",
-    "serve": "browser-sync start --server --serveStatic dist --files dist/**/*",
+    "serve": "browser-sync start --s --ss dist --f dist/**/* --no-notify --no-ui",
     "lint:css": "stylelint 'src/css/**/*.css' || true",
     "build:css": "npm run lint:css && postcss -c postcss.config.json",
     "build:js": "webpack",
