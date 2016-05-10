@@ -13,6 +13,9 @@
   "output": "dist/styles.css",
   "map": true,
   "local-plugins": true,
+  "autoprefixer": {
+    "browsers": "> 2%"
+  },
   "postcss-assets": {
     "basePath": "src/",
     "cachebuster": true,
