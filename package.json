@@ -54,7 +54,6 @@
   "dependencies": {
     "cq-prolyfill": "^0.3.2",
     "fastclick": "^1.0.6",
-    "jquery": "^2.2.3",
     "normalize.css": "^4.1.1"
   }
 }

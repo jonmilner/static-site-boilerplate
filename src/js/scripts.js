@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import fastclick from 'fastclick';
 import cqProlyfill from 'cq-prolyfill';
 
