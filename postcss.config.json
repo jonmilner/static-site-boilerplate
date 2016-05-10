@@ -7,6 +7,7 @@
     "postcss-cssnext",
     "postcss-assets",
     "postcss-hexrgba",
+    "cssnano",
     "postcss-reporter"
   ],
   "input": "src/css/styles.css",
@@ -21,5 +22,19 @@
     "cachebuster": true,
     "loadPaths": ["img/"],
     "relative": true
+  },
+  "cssnano": {
+    "autoprefixer": false,
+    "calc": false,
+    "colormin": false,
+    "discardComments": {
+      "removeAll": true
+    },
+    "discardUnused": false,
+    "filterPlugins": false,
+    "normalizeUrl": false,
+    "reduceIdents": false,
+    "styleCache": false,
+    "zindex": false
   }
 }
