@@ -60,7 +60,4 @@ browser-sync start --s --ss 'dist' --f 'dist/**/*' --no-notify --no-ui
 * [cq-prolyfill](https://github.com/ausi/cq-prolyfill)
 
 ## To Do
-- [ ] uglify js
-- [x] postcss-assets
-- [x] imagemin
-- [ ] customize style guide template
+- [ ] Customize the style guide template.
