@@ -42,6 +42,7 @@
     "postcss-assets": "^4.1.0",
     "postcss-cli": "^2.5.2",
     "postcss-cssnext": "^2.5.2",
+    "postcss-font-magician": "^1.4.0",
     "postcss-hexrgba": "^0.2.0",
     "postcss-import": "^8.1.0",
     "postcss-reporter": "^1.3.3",
