@@ -5,11 +5,18 @@
     "postcss-apply",
     "precss",
     "postcss-cssnext",
+    "postcss-assets",
     "postcss-hexrgba",
     "postcss-reporter"
   ],
   "input": "src/css/styles.css",
   "output": "dist/styles.css",
   "map": true,
-  "local-plugins": true
+  "local-plugins": true,
+  "postcss-assets": {
+    "basePath": "src/",
+    "cachebuster": true,
+    "loadPaths": ["img/"],
+    "relative": true
+  }
 }
