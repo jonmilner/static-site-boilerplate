@@ -18,8 +18,7 @@
     "watch:js": "onchange 'src/js/**/*' -- npm run build:js",
     "watch:html": "onchange 'src/views/**/*' -- npm run build:html",
     "watch:all": "parallelshell 'npm run serve' 'npm run watch:styleguide' 'npm run watch:images' 'npm run watch:css' 'npm run watch:js' 'npm run watch:html'",
-    "start": "npm run clean && npm run build:all && npm run watch:all",
-    "postinstall": "npm start"
+    "start": "npm run clean && npm run build:all && npm run watch:all"
   },
   "repository": {
     "type": "git",
