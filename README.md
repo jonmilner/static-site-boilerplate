@@ -1,4 +1,4 @@
-# Static Site Boilerplate
+# Static Site Boilerplate [![Build Status](https://travis-ci.org/jonmilner/web-boilerplate.svg?branch=master)](https://travis-ci.org/jonmilner/web-boilerplate)
 A boilerplate for new static web projects.
 
 ## Requirements
