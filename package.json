@@ -50,7 +50,7 @@
     "pug": "^2.0.0-alpha6",
     "pug-cli": "^1.0.0-alpha1",
     "stylelint": "^6.2.2",
-    "stylelint-config": "git+ssh://git@github.com/jonmilner/stylelint-config.git",
+    "stylelint-config": "github:jonmilner/stylelint-config",
     "webpack": "^1.13.0"
   },
   "dependencies": {
