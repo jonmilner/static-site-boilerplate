@@ -1,19 +1,22 @@
 {
   "use": [
     "postcss-import",
-    "cq-prolyfill/postcss-plugin",
     "postcss-apply",
+    "postcss-mixins",
+    "postcss-nested",
+    "cq-prolyfill/postcss-plugin",
     "precss",
     "postcss-cssnext",
     "postcss-assets",
+    "postcss-inline-svg",
     "postcss-font-magician",
-    "postcss-hexrgba",
-    "cssnano",
+    "postcss-initial",
+    "postcss-pxtorem",
     "postcss-reporter"
   ],
-  "input": "src/css/styles.css",
-  "output": "dist/styles.css",
-  "map": true,
+  "input": "assets/css/*.css",
+  "dir": "dist/assets/css",
+  "map": false,
   "local-plugins": true,
   "autoprefixer": {
     "browsers": "> 2%"
@@ -27,10 +30,18 @@
   "postcss-font-magician": {
     "foundries": ["custom", "hosted", "google"]
   },
+  "postcss-pxtorem": {
+    "unitPrecision": 10,
+    "propWhiteList": [],
+    "replace": false,
+    "selectorBlackList": [],
+    "minPixelValue": 5
+  },
   "cssnano": {
     "autoprefixer": false,
     "calc": false,
     "colormin": false,
+    "core": true,
     "discardComments": {
       "removeAll": true
     },
@@ -38,7 +49,10 @@
     "filterPlugins": false,
     "normalizeUrl": false,
     "reduceIdents": false,
-    "styleCache": false,
+    "styleCache": true,
     "zindex": false
+  },
+  "postcss-reporter": {
+    "clearMessages": true
   }
 }
