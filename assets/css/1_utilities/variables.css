@@ -1,0 +1,137 @@
+/* ==========================================================================
+ * Variables
+ * ========================================================================== */
+
+:root {
+  --background-color-default: #fff;
+  --background-color-dark: var(--color-gray-dark);
+  --border-color-default: var(--color-gray);
+  --border-default: 1px solid var(--border-color-default);
+  --border-radius-default: 3px;
+  --box-shadow-default: 0 0 15px rgba(0, 0, 0, 0.2);
+  --color-blue: #3498db;
+  --color-gray: #bdc3c7;
+  --color-gray-light: #ecf0f1;
+  --color-gray-dark: #95a5a6;
+  --color-default: #000;
+  --color-muted: var(--color-gray-dark);
+  --color-accent: var(--color-blue);
+  --font-family-default: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  --font-family-secondary: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
+  --font-size-default: var(--font-size-med);
+  --font-size-xxl: 30px;
+  --font-size-xl: 22px;
+  --font-size-lg: 16px;
+  --font-size-med: 14px;
+  --font-size-sm: 12px;
+  --font-size-xs: 10px;
+  --font-weight-default: var(--font-weight-light);
+  --font-weight-bold: 600;
+  --font-weight-normal: 500;
+  --font-weight-light: 300;
+  --line-height-default: 1.5;
+  --line-height-sm: 1.2;
+  --spacing-xl: 48px;
+  --spacing-lg: 36px;
+  --spacing-med: 24px;
+  --spacing-sm: 12px;
+  --spacing-xs: 6px;
+  --text-shadow-default: 0 0 5px rgba(0, 0, 0, 0.5);
+  --transition-duration-default: 0.2s;
+  --transition-timing-default: ease-in-out;
+  --transition-default: all var(--transition-duration-default) var(--transition-timing-default);
+
+  --clearfix: {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  --disabled: {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  --heading: {
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-sm);
+
+    &:not(:last-child) {
+      margin-bottom: var(--spacing-sm);
+    }
+  }
+
+  --heading-h1: {
+    @apply --heading;
+    font-size: var(--font-size-xxl);
+  }
+
+  --heading-h2: {
+    @apply --heading;
+    font-size: var(--font-size-xl);
+  }
+
+  --heading-h3: {
+    @apply --heading;
+    font-size: var(--font-size-lg);
+  }
+
+  --heading-h4: {
+    @apply --heading;
+    font-size: var(--font-size-med);
+  }
+
+  --heading-h5: {
+    @apply --heading;
+    font-size: var(--font-size-sm);
+  }
+
+  --heading-h6: {
+    @apply --heading;
+    font-size: var(--font-size-xs);
+  }
+
+  --reset: {
+    all: initial;
+  }
+}
+
+/*
+Colors
+
+<div class="sg-color-blocks">
+  <div class="sg-color-block sg-color-block--blue"><code>--blue</code></div>
+  <div class="sg-color-block sg-color-block--gray"><code>--gray</code></div>
+  <div class="sg-color-block sg-color-block--gray-light"><code>--gray-light</code></div>
+  <div class="sg-color-block sg-color-block--gray-dark"><code>--gray-dark</code></div>
+</div>
+
+Styleguide Utilities.Colors
+*/
+
+/* These styles are used by the style guide example */
+.sg-color-block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  &::after {
+    border-radius: var(--border-radius-default);
+    content: "";
+    display: block;
+    height: var(--spacing-lg);
+    width: 50%;
+  }
+}
+
+@each $color in ( blue, gray, gray-light, gray-dark ) {
+  .sg-color-block--$(color) {
+    &::after {
+      background: var(--color-$(color));
+    }
+  }
+}

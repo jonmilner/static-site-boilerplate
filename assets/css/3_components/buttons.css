@@ -1,0 +1,32 @@
+/* ==========================================================================
+ * Buttons
+ * ========================================================================== */
+
+/*
+  Buttons
+
+  Markup:
+  <button class="c-button">Button</button>
+
+  Styleguide: Components.Buttons
+*/
+
+.c-button {
+  border: 1px solid var(--color-accent);
+  border-radius: 100px;
+  color: var(--color-accent);
+  display: inline-block;
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-default);
+  padding: var(--spacing-xs) var(--spacing-lg);
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-accent);
+    color: #fff;
+  }
+}

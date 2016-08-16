@@ -1,0 +1,15 @@
+/* ==========================================================================
+ * Clearfix
+ * ========================================================================== */
+
+/*
+Clearfix
+
+Use `.h-clearfix` to fix the zero-height container problem for floated elements.
+
+Styleguide Helpers.Clearfix
+*/
+
+.h-clearfix {
+  @apply --clearfix;
+}

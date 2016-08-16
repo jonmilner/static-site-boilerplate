@@ -1,0 +1,73 @@
+/* ==========================================================================
+ * Forms
+ * ========================================================================== */
+
+/*
+  Forms
+
+  Markup:
+  <form>
+    <fieldset>
+      <legend>Legend</legend>
+      <label for="text-input">Text Field:</label>
+      <input id="text-input" type="text" placeholder="Input">
+      <label for="textarea">Textarea:</label>
+      <textarea id="textarea" placeholder="Textarea"></textarea>
+      <label for="select">Select:</label>
+      <select id="select">
+        <option selected disabled>Choose an Option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </fieldset>
+  </form>
+
+  Styleguide: Base.Forms
+*/
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: block;
+
+  &:not([class]) {
+    &:not(:last-child) {
+      margin-bottom: var(--spacing-med);
+    }
+  }
+}
+
+label {
+  &:not([class]) {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+input,
+select,
+textarea {
+  display: block;
+  padding: 0;
+  width: 100%;
+
+  &[class] {
+    appearance: none;
+  }
+
+  &:not([class]) {
+    border: var(--border-default);
+    border-radius: var(--border-radius-default);
+    line-height: var(--line-height-default);
+    padding: var(--spacing-xs);
+
+    &:not(:last-child) {
+      margin-bottom: var(--spacing-med);
+    }
+  }
+}

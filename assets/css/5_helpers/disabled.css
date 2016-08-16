@@ -1,0 +1,21 @@
+/* ==========================================================================
+ * Disabled
+ * ========================================================================== */
+
+/*
+Disabled
+
+Use the custom property `--disabled`, the `disabled` attribute or the `.is-disabled` class to disable any element.
+
+Markup:
+<button class="c-button">Default Button</button>
+<button class="c-button" disabled>Disabled Button</button>
+<button class="c-button is-disabled">Disabled Button</button>
+
+Styleguide Helpers.Disabled
+*/
+
+[disabled],
+.is-disabled {
+  @apply --disabled;
+}

@@ -1,0 +1,20 @@
+/* ==========================================================================
+ * Container
+ * ========================================================================== */
+
+/*
+  Container
+
+  Use `<div class="l-container"></div>` to center and set a max-width on your content.
+
+  Styleguide: Layout.Container
+*/
+
+.l-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: var(--spacing-med);
+  padding-right: var(--spacing-med);
+  position: relative;
+}

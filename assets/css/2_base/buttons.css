@@ -1,0 +1,37 @@
+/* ==========================================================================
+ * Buttons
+ * ========================================================================== */
+
+/*
+  Buttons
+
+  Markup:
+  <button>Button</button>
+
+  Styleguide: Base.Buttons
+*/
+
+button {
+  color: var(--color-default);
+  cursor: pointer;
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  -webkit-font-smoothing: inherit;
+  line-height: 1;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+
+  &:not([class]) {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    border: var(--border-default);
+    border-radius: var(--border-radius-default);
+    padding: var(--spacing-xs) var(--spacing-sm);
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+/* ==========================================================================
+ * Floats
+ * ========================================================================== */
+
+/*
+Floats
+
+Styleguide Helpers.Floats
+*/
+
+.h-float-right {
+  float: right !important;
+}
+
+.h-float-left {
+  float: left !important;
+}
+
+.h-clearfix {
+  @apply --clearfix;
+}

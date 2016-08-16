@@ -1,0 +1,26 @@
+/* ==========================================================================
+ * Typography
+ * ========================================================================== */
+
+/*
+Typography
+
+Markup:
+<p class="h-text-left">Text Left</p>
+<p class="h-text-center">Text Center</p>
+<p class="h-text-right">Text Right</p>
+
+Styleguide Helpers.Typography
+*/
+
+.h-text-left {
+  text-align: left !important;
+}
+
+.h-text-center {
+  text-align: center !important;
+}
+
+.h-text-right {
+  text-align: right !important;
+}

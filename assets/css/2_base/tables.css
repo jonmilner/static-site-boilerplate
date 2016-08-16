@@ -1,0 +1,60 @@
+/* ==========================================================================
+ * Tables
+ * ========================================================================== */
+
+/*
+  Tables
+
+  Markup:
+  <table>
+    <tbody>
+      <tr>
+        <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+      </tr>
+      <tr>
+        <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+      </tr>
+      <tr>
+        <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+      </tr>
+      <tr>
+        <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  Styleguide: Base.Tables
+*/
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: var(--spacing-med);
+  }
+
+  &:not([class]) {
+    th,
+    td {
+      border-bottom: var(--border-default);
+      padding-bottom: var(--spacing-sm);
+    }
+
+    th {
+      font-weight: var(--font-weight-bold);
+      text-align: left;
+    }
+
+    td {
+      padding-top: var(--spacing-sm);
+    }
+
+    tr,
+    td,
+    th {
+      vertical-align: middle;
+    }
+  }
+}
