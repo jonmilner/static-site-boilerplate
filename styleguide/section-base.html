@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Style Guide</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body class="sg-page">
+
+    <div class="sg-overlay js-sg-overlay"></div>
+
+    <!-- HEADER -->
+    <div class="sg-page__header">
+      <header class="sg-header">
+        <button class="sg-hamburger js-sg-slideout-toggle">
+          <div class="sg-hamburger__icon">
+            <span class="sg-hamburger__line"></span>
+            <span class="sg-hamburger__line"></span>
+            <span class="sg-hamburger__line"></span>
+          </div>
+        </button>
+        <a href="/styleguide" class="sg-header__title">
+          <span>Style Guide</span>
+        </a>
+      </header>
+    </div>
+
+    <div class="sg-page__main">
+
+      <!-- SIDEBAR -->
+      <div class="sg-slideout-menu js-sg-slideout-menu">
+        <aside class="sg-sidebar">
+          <ul class="sg-sidebar__menu">
+            <li>
+              <a href="./">Getting Started</a>
+            </li>
+              <li>
+                <a data-target="#utilities" href="section-utilities.html#utilities">Utilities</a>
+                  <ul>
+                      <li>
+                        <a data-target="#utilities-colors" href="section-utilities.html#utilities-colors">Colors</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                <a data-target="#base" href="section-base.html#base">Base</a>
+                  <ul>
+                      <li>
+                        <a data-target="#base-buttons" href="section-base.html#base-buttons">Buttons</a>
+                      </li>
+                      <li>
+                        <a data-target="#base-forms" href="section-base.html#base-forms">Forms</a>
+                      </li>
+                      <li>
+                        <a data-target="#base-images" href="section-base.html#base-images">Images</a>
+                      </li>
+                      <li>
+                        <a data-target="#base-lists" href="section-base.html#base-lists">Lists</a>
+                      </li>
+                      <li>
+                        <a data-target="#base-tables" href="section-base.html#base-tables">Tables</a>
+                      </li>
+                      <li>
+                        <a data-target="#base-typography" href="section-base.html#base-typography">Typography</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                <a data-target="#components" href="section-components.html#components">Components</a>
+                  <ul>
+                      <li>
+                        <a data-target="#components-buttons" href="section-components.html#components-buttons">Buttons</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                <a data-target="#layout" href="section-layout.html#layout">Layout</a>
+                  <ul>
+                      <li>
+                        <a data-target="#layout-container" href="section-layout.html#layout-container">Container</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                <a data-target="#helpers" href="section-helpers.html#helpers">Helpers</a>
+                  <ul>
+                      <li>
+                        <a data-target="#helpers-clearfix" href="section-helpers.html#helpers-clearfix">Clearfix</a>
+                      </li>
+                      <li>
+                        <a data-target="#helpers-disabled" href="section-helpers.html#helpers-disabled">Disabled</a>
+                      </li>
+                      <li>
+                        <a data-target="#helpers-floats" href="section-helpers.html#helpers-floats">Floats</a>
+                      </li>
+                      <li>
+                        <a data-target="#helpers-reset" href="section-helpers.html#helpers-reset">Reset</a>
+                      </li>
+                      <li>
+                        <a data-target="#helpers-typography" href="section-helpers.html#helpers-typography">Typography</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- MAIN -->
+      <main class="sg-main">
+
+          <!-- STYLE GUIDE SECTION -->
+            <div id="base"></div>
+            <section class="sg-section sg-section--depth-1 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h1 class="sg-section__h1">
+                    Base                  </h1>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+
+              </div>
+            </section>
+            <div id="base-buttons"></div>
+            <section class="sg-section sg-section--depth-2 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h2 class="sg-section__h2">
+                    
+                      <a data-target="#base-buttons" href="#base-buttons">
+                        Buttons
+                      </a>
+                  </h2>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+                  <div class="sg-section__markup-label">
+                    <span class="c-label">Example</span>
+                  </div>
+                  <div class="sg-section__markup">
+                    <button>Button</button>
+                  </div>
+                  <pre class="sg-section__code lang-html"><code>&lt;button&gt;Button&lt;/button&gt;</code></pre>
+
+              </div>
+            </section>
+            <div id="base-forms"></div>
+            <section class="sg-section sg-section--depth-2 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h2 class="sg-section__h2">
+                    
+                      <a data-target="#base-forms" href="#base-forms">
+                        Forms
+                      </a>
+                  </h2>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+                  <div class="sg-section__markup-label">
+                    <span class="c-label">Example</span>
+                  </div>
+                  <div class="sg-section__markup">
+                    <form>
+  <fieldset>
+    <legend>Legend</legend>
+    <label for="text-input">Text Field:</label>
+    <input id="text-input" type="text" placeholder="Input">
+    <label for="textarea">Textarea:</label>
+    <textarea id="textarea" placeholder="Textarea"></textarea>
+    <label for="select">Select:</label>
+    <select id="select">
+      <option selected disabled>Choose an Option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </fieldset>
+</form>
+                  </div>
+                  <pre class="sg-section__code lang-html"><code>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Legend&lt;/legend&gt;
+    &lt;label for&#x3D;&quot;text-input&quot;&gt;Text Field:&lt;/label&gt;
+    &lt;input id&#x3D;&quot;text-input&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Input&quot;&gt;
+    &lt;label for&#x3D;&quot;textarea&quot;&gt;Textarea:&lt;/label&gt;
+    &lt;textarea id&#x3D;&quot;textarea&quot; placeholder&#x3D;&quot;Textarea&quot;&gt;&lt;/textarea&gt;
+    &lt;label for&#x3D;&quot;select&quot;&gt;Select:&lt;/label&gt;
+    &lt;select id&#x3D;&quot;select&quot;&gt;
+      &lt;option selected disabled&gt;Choose an Option&lt;/option&gt;
+      &lt;option value&#x3D;&quot;1&quot;&gt;Option 1&lt;/option&gt;
+      &lt;option value&#x3D;&quot;2&quot;&gt;Option 2&lt;/option&gt;
+      &lt;option value&#x3D;&quot;3&quot;&gt;Option 3&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+
+              </div>
+            </section>
+            <div id="base-images"></div>
+            <section class="sg-section sg-section--depth-2 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h2 class="sg-section__h2">
+                    
+                      <a data-target="#base-images" href="#base-images">
+                        Images
+                      </a>
+                  </h2>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+                  <div class="sg-section__markup-label">
+                    <span class="c-label">Example</span>
+                  </div>
+                  <div class="sg-section__markup">
+                    <img src="http://placehold.it/600x400">
+                  </div>
+                  <pre class="sg-section__code lang-html"><code>&lt;img src&#x3D;&quot;http://placehold.it/600x400&quot;&gt;</code></pre>
+
+              </div>
+            </section>
+            <div id="base-lists"></div>
+            <section class="sg-section sg-section--depth-2 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h2 class="sg-section__h2">
+                    
+                      <a data-target="#base-lists" href="#base-lists">
+                        Lists
+                      </a>
+                  </h2>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+                  <div class="sg-section__markup-label">
+                    <span class="c-label">Example</span>
+                  </div>
+                  <div class="sg-section__markup">
+                    <h3>Ordered List</h3>
+<ol>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+</ol>
+<h3>Unordered List</h3>
+<ul>
+  <li>List Item 1</li>
+  <li>List Item 2
+    <ul>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+    </ul>
+  </li>
+  <li>List Item 3</li>
+</ul>
+                  </div>
+                  <pre class="sg-section__code lang-html"><code>&lt;h3&gt;Ordered List&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Unordered List&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2
+    &lt;ul&gt;
+      &lt;li&gt;List Item 1&lt;/li&gt;
+      &lt;li&gt;List Item 2&lt;/li&gt;
+      &lt;li&gt;List Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+              </div>
+            </section>
+            <div id="base-lists-definition-lists"></div>
+            <section class="sg-section sg-section--depth-3 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h3 class="sg-section__h3">
+                    
+                      <a data-target="#base-lists-definition-lists" href="#base-lists-definition-lists">
+                        Definition Lists
+                      </a>
+                  </h3>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+                  <div class="sg-section__markup-label">
+                    <span class="c-label">Example</span>
+                  </div>
+                  <div class="sg-section__markup">
+                    <dl>
+  <dt>Definition List Title</dt>
+  <dd>This is a definition list division.</dd>
+  <dt>Definition List Title</dt>
+  <dd>This is a definition list division.</dd>
+  <dt>Definition List Title</dt>
+  <dd>This is a definition list division.</dd>
+</dl>
+                  </div>
+                  <pre class="sg-section__code lang-html"><code>&lt;dl&gt;
+  &lt;dt&gt;Definition List Title&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+  &lt;dt&gt;Definition List Title&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+  &lt;dt&gt;Definition List Title&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+              </div>
+            </section>
+            <div id="base-tables"></div>
+            <section class="sg-section sg-section--depth-2 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h2 class="sg-section__h2">
+                    
+                      <a data-target="#base-tables" href="#base-tables">
+                        Tables
+                      </a>
+                  </h2>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+                  <div class="sg-section__markup-label">
+                    <span class="c-label">Example</span>
+                  </div>
+                  <div class="sg-section__markup">
+                    <table>
+  <tbody>
+    <tr>
+      <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+    </tr>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+  </tbody>
+</table>
+                  </div>
+                  <pre class="sg-section__code lang-html"><code>&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Table Header 1&lt;/th&gt;&lt;th&gt;Table Header 2&lt;/th&gt;&lt;th&gt;Table Header 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Division 1&lt;/td&gt;&lt;td&gt;Division 2&lt;/td&gt;&lt;td&gt;Division 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Division 1&lt;/td&gt;&lt;td&gt;Division 2&lt;/td&gt;&lt;td&gt;Division 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Division 1&lt;/td&gt;&lt;td&gt;Division 2&lt;/td&gt;&lt;td&gt;Division 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+              </div>
+            </section>
+            <div id="base-typography"></div>
+            <section class="sg-section sg-section--depth-2 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h2 class="sg-section__h2">
+                    
+                      <a data-target="#base-typography" href="#base-typography">
+                        Typography
+                      </a>
+                  </h2>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+
+              </div>
+            </section>
+            <div id="base-typography-headings"></div>
+            <section class="sg-section sg-section--depth-3 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h3 class="sg-section__h3">
+                    
+                      <a data-target="#base-typography-headings" href="#base-typography-headings">
+                        Headings
+                      </a>
+                  </h3>
+                    <div class="sg-section__description">
+                      <p>Headings are unstyled by default so that they can be used interchangeably.</p>
+
+                    </div>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+                  <div class="sg-section__markup-label">
+                    <span class="c-label">Example</span>
+                  </div>
+                  <div class="sg-section__markup">
+                    <h1>Heading 1</h1>
+<h2>Heading 2</h1>
+<h3>Heading 3</h1>
+<h4>Heading 4</h1>
+<h5>Heading 5</h1>
+<h6>Heading 6</h1>
+                  </div>
+                  <pre class="sg-section__code lang-html"><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h1&gt;
+&lt;h3&gt;Heading 3&lt;/h1&gt;
+&lt;h4&gt;Heading 4&lt;/h1&gt;
+&lt;h5&gt;Heading 5&lt;/h1&gt;
+&lt;h6&gt;Heading 6&lt;/h1&gt;</code></pre>
+
+              </div>
+            </section>
+            <div id="base-typography-paragraphs"></div>
+            <section class="sg-section sg-section--depth-3 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h3 class="sg-section__h3">
+                    
+                      <a data-target="#base-typography-paragraphs" href="#base-typography-paragraphs">
+                        Paragraphs
+                      </a>
+                  </h3>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+                  <div class="sg-section__markup-label">
+                    <span class="c-label">Example</span>
+                  </div>
+                  <div class="sg-section__markup">
+                    <p>Lorem ipsum dolor sit amet, <a href="#">test link</a> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, <a href="#">test link</a> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                  <pre class="sg-section__code lang-html"><code>&lt;p&gt;Lorem ipsum dolor sit amet, &lt;a href&#x3D;&quot;#&quot;&gt;test link&lt;/a&gt; consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;a href&#x3D;&quot;#&quot;&gt;test link&lt;/a&gt; consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</code></pre>
+
+              </div>
+            </section>
+            <div id="base-typography-small"></div>
+            <section class="sg-section sg-section--depth-3 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h3 class="sg-section__h3">
+                    
+                      <a data-target="#base-typography-small" href="#base-typography-small">
+                        Small
+                      </a>
+                  </h3>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+                  <div class="sg-section__markup-label">
+                    <span class="c-label">Example</span>
+                  </div>
+                  <div class="sg-section__markup">
+                    <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small></p>
+                  </div>
+                  <pre class="sg-section__code lang-html"><code>&lt;p&gt;&lt;small&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/small&gt;&lt;/p&gt;</code></pre>
+
+              </div>
+            </section>
+            <div id="base-typography-strong"></div>
+            <section class="sg-section sg-section--depth-3 ">
+              <div class="l-container">
+
+                <!-- SECTION HEADER & DESCRIPTION -->
+                <div class="sg-section__header">
+                  <h3 class="sg-section__h3">
+                    
+                      <a data-target="#base-typography-strong" href="#base-typography-strong">
+                        Strong
+                      </a>
+                  </h3>
+                </div>
+
+                <!-- MARKUP EXAMPLE & CODE -->
+                  <div class="sg-section__markup-label">
+                    <span class="c-label">Example</span>
+                  </div>
+                  <div class="sg-section__markup">
+                    <p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit.</p>
+                  </div>
+                  <pre class="sg-section__code lang-html"><code>&lt;p&gt;Lorem ipsum &lt;strong&gt;dolor sit amet&lt;/strong&gt;, consectetur adipisicing elit.&lt;/p&gt;</code></pre>
+
+              </div>
+            </section>
+      </main>
+
+    </div>
+
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/styleguide.js"></script>
+
+  </body>
+</html>
