@@ -3,24 +3,57 @@
  * ========================================================================== */
 
 /*
-Typography
+  Typography
 
-Markup:
-<p class="h-text-left">Text Left</p>
-<p class="h-text-center">Text Center</p>
-<p class="h-text-right">Text Right</p>
-
-Styleguide Helpers.Typography
+  Styleguide Helpers.Typography
 */
 
-.h-text-left {
-  text-align: left !important;
-}
+/* ==========================================================================
+ * Colors
+ * ========================================================================== */
 
-.h-text-center {
-  text-align: center !important;
-}
+/*
+  Colors
 
-.h-text-right {
-  text-align: right !important;
-}
+  Styleguide: Helpers.Typography.Colors
+*/
+
+.h-color-charcoal { color: var(--color-charcoal) !important; }
+
+/* ==========================================================================
+ * Headings
+ * ========================================================================== */
+
+/*
+  Headings
+
+  <h1 class="h-heading-h1">Heading 1</h1>
+  <h2 class="h-heading-h2">Heading 2</h1>
+  <h3 class="h-heading-h3">Heading 3</h1>
+  <h4 class="h-heading-h4">Heading 4</h1>
+  <h5 class="h-heading-h5">Heading 5</h1>
+  <h6 class="h-heading-h6">Heading 6</h1>
+
+  Styleguide: Helpers.Typography.Headings
+*/
+
+.h-heading-h1 { @apply --heading-h1; }
+.h-heading-h2 { @apply --heading-h2; }
+.h-heading-h3 { @apply --heading-h3; }
+.h-heading-h4 { @apply --heading-h4; }
+.h-heading-h5 { @apply --heading-h5; }
+.h-heading-h6 { @apply --heading-h6; }
+
+/* ==========================================================================
+ * Text Alignment
+ * ========================================================================== */
+
+/*
+  Text Alignment
+
+  Styleguide: Helpers.Typography.Text Alignment
+*/
+
+.h-text-align-left { text-align: left !important; }
+.h-text-align-center { text-align: center !important; }
+.h-text-align-right { text-align: right !important; }

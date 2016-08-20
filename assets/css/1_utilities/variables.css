@@ -24,10 +24,10 @@
   --font-size-med: 14px;
   --font-size-sm: 12px;
   --font-size-xs: 10px;
-  --font-weight-default: var(--font-weight-light);
-  --font-weight-bold: 600;
-  --font-weight-normal: 500;
-  --font-weight-light: 300;
+  --font-weight-default: var(--font-weight-normal);
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --font-weight-light: 100;
   --line-height-default: 1.5;
   --line-height-sm: 1.2;
   --spacing-xl: 48px;
