@@ -4,17 +4,16 @@
 
 :root {
   --background-color-default: #fff;
-  --background-color-dark: var(--color-gray-dark);
+  --background-color-dark: var(--color-charcoal);
   --border-color-default: var(--color-gray);
   --border-default: 1px solid var(--border-color-default);
   --border-radius-default: 3px;
   --box-shadow-default: 0 0 15px rgba(0, 0, 0, 0.2);
   --color-blue: #3498db;
-  --color-gray: #bdc3c7;
-  --color-gray-light: #ecf0f1;
-  --color-gray-dark: #95a5a6;
-  --color-default: #000;
-  --color-muted: var(--color-gray-dark);
+  --color-charcoal: #111;
+  --color-gray: #ccc;
+  --color-default: var(--color-charcoal);
+  --color-muted: var(--color-gray);
   --color-accent: var(--color-blue);
   --font-family-default: "Roboto", "Helvetica Neue", "Arial", sans-serif;
   --font-family-secondary: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
@@ -100,10 +99,7 @@
 Colors
 
 <div class="sg-color-blocks">
-  <div class="sg-color-block sg-color-block--blue"><code>--blue</code></div>
-  <div class="sg-color-block sg-color-block--gray"><code>--gray</code></div>
-  <div class="sg-color-block sg-color-block--gray-light"><code>--gray-light</code></div>
-  <div class="sg-color-block sg-color-block--gray-dark"><code>--gray-dark</code></div>
+  <div class="sg-color-block sg-color-block--charcoal"><code>--charcoal</code></div>
 </div>
 
 Styleguide Utilities.Colors
@@ -128,7 +124,7 @@ Styleguide Utilities.Colors
   }
 }
 
-@each $color in ( blue, gray, gray-light, gray-dark ) {
+@each $color in ( charcoal ) {
   .sg-color-block--$(color) {
     &::after {
       background: var(--color-$(color));

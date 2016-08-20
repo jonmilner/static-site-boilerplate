@@ -136,7 +136,7 @@
       padding: var(--spacing-xs) var(--spacing-sm);
 
       &:hover {
-        background: var(--color-gray-light);
+        background: rgba(0, 0, 0, 0.05);
       }
     }
 
