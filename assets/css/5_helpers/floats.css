@@ -3,9 +3,9 @@
  * ========================================================================== */
 
 /*
-Floats
+  Floats
 
-Styleguide Helpers.Floats
+  Styleguide Helpers.Floats
 */
 
 .h-float-right {
@@ -15,6 +15,18 @@ Styleguide Helpers.Floats
 .h-float-left {
   float: left !important;
 }
+
+.h-clearfix {
+  @apply --clearfix;
+}
+
+/*
+  Clearfix
+
+  Use `.h-clearfix` to fix the zero-height container problem for floated elements.
+
+  Styleguide Helpers.Clearfix
+*/
 
 .h-clearfix {
   @apply --clearfix;
