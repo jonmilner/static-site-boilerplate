@@ -25,7 +25,7 @@
     "relative": true
   },
   "postcss-cssnext": {
-    "browsers": "['> 1% in US', 'last 3 versions', 'Firefox ESR', 'Opera 12.1']"
+    "browsers": ["> 1% in US", "last 3 versions", "Firefox ESR", "Opera 12.1"]
   },
   "postcss-font-magician": {
     "foundries": ["custom", "hosted", "google"]
