@@ -18,14 +18,14 @@
   "dir": "dist/assets/css",
   "map": false,
   "local-plugins": true,
-  "autoprefixer": {
-    "browsers": "> 2%"
-  },
   "postcss-assets": {
     "basePath": "src/",
     "cachebuster": true,
     "loadPaths": ["img/"],
     "relative": true
+  },
+  "postcss-cssnext": {
+    "browsers": "['> 1% in US', 'last 3 versions', 'Firefox ESR', 'Opera 12.1']"
   },
   "postcss-font-magician": {
     "foundries": ["custom", "hosted", "google"]
